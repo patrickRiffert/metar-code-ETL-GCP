@@ -6,11 +6,11 @@ The METAR code is provided hourly in every non-private aerodrome in the world. T
 Given that the data returned by the API is light I have used a simple cloud function to do the JOB. The fuction is triggered hourly by a topic in Pub/Sub that receive messages from Cloud Scheduler. The function sends the request to the API, parse the JSON and load retrived data to a table in Big Query.
 
 **Architecture Diagramam**  
-[Architecture Diagramam](img/diagram.png)
+![Architecture Diagramam](img/diagram.png)
 
 
 **Final product**  
-[Final table](img/final_product.png)
+![Final table](img/final_product.png)
 
 
 **Example of METAR code**
